@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Foxy Antics"
 config/tags=PackedStringArray("platformer")
-run/main_scene="res://main_menu/main_menu.tscn"
+run/main_scene="res://scenes/main_menu/main_menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.png"
 

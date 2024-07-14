@@ -3,7 +3,7 @@ extends Node
 const GROUP_PLAYER: String = "player"
 
 const TOTAL_LEVELS: int = 3
-const MAIN_SCENE: PackedScene = preload("res://main_menu/main_menu.tscn")
+const MAIN_SCENE: PackedScene = preload("res://scenes/main_menu/main_menu.tscn")
 
 var _current_level: int = 0
 var _level_scenes = {}
@@ -13,7 +13,7 @@ func _ready():
 
 func init_level_scenes() -> void:
 	for ln in range(1, TOTAL_LEVELS+1):
-		_level_scenes[ln] = load("res://level_base/levels/level_%s.tscn" % ln)
+		_level_scenes[ln] = load("res://scenes/level_base/levels/level_%s.tscn" % ln)
 
 func load_main_scene() -> void:
 	_current_level = 0

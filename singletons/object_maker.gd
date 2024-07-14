@@ -4,14 +4,14 @@ enum BULLET_KEY {PLAYER, ENEMY}
 enum SCENE_KEY { EXPLOSION, PICKUP }
 
 const BULLETS = {
-	BULLET_KEY.PLAYER: preload("res://bullets/bullet_player/bullet_player.tscn"),
-	BULLET_KEY.ENEMY: preload("res://bullets/bullet_enemy/bullet_enemy.tscn")
+	BULLET_KEY.PLAYER: preload("res://scenes/bullets/bullet_player/bullet_player.tscn"),
+	BULLET_KEY.ENEMY: preload("res://scenes/bullets/bullet_enemy/bullet_enemy.tscn")
 	
 }
 
 const SIMPLE_SCENES = {
-	SCENE_KEY.EXPLOSION: preload("res://enemy_explosion/enemy_explosion.tscn"),
-	SCENE_KEY.PICKUP: preload("res://fruit_pickup/fruit_pick_up.tscn")
+	SCENE_KEY.EXPLOSION: preload("res://scenes/enemy_explosion/enemy_explosion.tscn"),
+	SCENE_KEY.PICKUP: preload("res://scenes/fruit_pickup/fruit_pick_up.tscn")
 }
 
 func add_child_deferred(child_to_add) -> void:
